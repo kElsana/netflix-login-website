@@ -43,7 +43,7 @@ function Login(){
 
         setLoading(true);
 
-        const LoginDetails=axios.post("http://localhost:5000/login",{"email":email,"password":pass})
+        const LoginDetails=axios.post("https://netflix-login-website.onrender.com/login",{"email":email,"password":pass})
         
         LoginDetails.then(({data})=>{
             if(data.success === true){
